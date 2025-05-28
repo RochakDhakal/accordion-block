@@ -21,7 +21,7 @@ import Edit from "./edit";
 import Save from "./save";
 import metadata from "./block.json";
 import accordionIcon from "./icon";
-import "./accordion-plugin/accordion-item/index.js";
+import "./accordion-item/index.js";
 
 /**
  * Every block starts by registering a new block type definition.
