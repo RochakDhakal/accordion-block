@@ -1,163 +1,6 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
-
-/***/ "./src/accordion-item/edit.js":
-/*!************************************!*\
-  !*** ./src/accordion-item/edit.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
-
-
-function Edit({
-  attributes,
-  setAttributes
-}) {
-  const {
-    toggleAccordion,
-    accordionHeading,
-    accordionContent
-  } = attributes;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {})
-  });
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Edit);
-
-/***/ }),
-
-/***/ "./src/accordion-item/icon.js":
-/*!************************************!*\
-  !*** ./src/accordion-item/icon.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("svg", {
-  width: "27",
-  height: "22",
-  viewBox: "0 0 27 22",
-  fill: "none",
-  xmlns: "http://www.w3.org/2000/svg",
-  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-    d: "M21.0772 6.5L19.1024 4.52517C18.9659 4.38867 18.9659 4.16796 19.1024 4.03291L19.4305 3.70474C19.567 3.56825 19.7878 3.56825 19.9228 3.70474L21.3226 5.10455L22.7224 3.70474C22.8589 3.56825 23.0796 3.56825 23.2147 3.70474L23.5428 4.03291C23.6793 4.16941 23.6793 4.39013 23.5428 4.52517L21.568 6.5C21.4344 6.6365 21.2137 6.6365 21.0772 6.5Z",
-    fill: "#0C50FF"
-  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
-    fill: "none",
-    x: "1",
-    y: "1",
-    width: "25",
-    height: "8",
-    stroke: "#0C50FF",
-    strokeWidth: "2"
-  })]
-}));
-
-/***/ }),
-
-/***/ "./src/accordion-item/index.js":
-/*!*************************************!*\
-  !*** ./src/accordion-item/index.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
-/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./edit */ "./src/accordion-item/edit.js");
-/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./save */ "./src/accordion-item/save.js");
-/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_save__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./icon */ "./src/accordion-item/icon.js");
-/**
- * Registers a new block provided a unique name and an object defining its behavior.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
- */
-
-
-/**
- * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
- * All files containing `style` keyword are bundled together. The code used
- * gets applied both to the front of your site and to the editor.
- *
- * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
- */
-
-/**
- * Internal dependencies
- */
-
-
-
-
-/**
- * Every block starts by registering a new block type definition.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
- */
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("plugin-testing-block/accordion-items", {
-  title: "Accordion Items",
-  category: "widgets",
-  description: "A block to display accordion items.",
-  supports: {
-    html: false
-  },
-  attributes: {
-    toggleAccordion: {
-      type: "boolean",
-      default: false
-    },
-    accordionHeading: {
-      type: "string",
-      default: "Accordion Heading"
-    },
-    accordionContent: {
-      type: "string",
-      default: "Lorem ipsum"
-    }
-  },
-  /**
-   * @see ./edit.js
-   */
-  edit: _edit__WEBPACK_IMPORTED_MODULE_1__["default"],
-  /**
-   * @see ./icon.js
-   */
-  icon: _icon__WEBPACK_IMPORTED_MODULE_3__["default"],
-  /**
-   * @see ./save.js
-   */
-  save: (_save__WEBPACK_IMPORTED_MODULE_2___default())
-});
-
-/***/ }),
-
-/***/ "./src/accordion-item/save.js":
-/*!************************************!*\
-  !*** ./src/accordion-item/save.js ***!
-  \************************************/
-/***/ (() => {
-
-
-
-/***/ }),
 
 /***/ "./src/block.json":
 /*!************************!*\
@@ -165,8 +8,7 @@ __webpack_require__.r(__webpack_exports__);
   \************************/
 /***/ ((module) => {
 
-"use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/accordion-plugin","version":"0.1.0","title":"Accordion Plugin","category":"widgets","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false},"textdomain":"accordion-plugin","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./save.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wp-testing/plugin-accordion","version":"0.1.0","title":"Plugin Accordion","category":"widgets","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false},"textdomain":"plugin-accordion","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./save.js"}');
 
 /***/ }),
 
@@ -176,7 +18,6 @@ module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/tru
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Edit)
@@ -221,10 +62,10 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 function Edit() {
-  const TEMPLATE = [["plugin-testing-block/accordion-items"]];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+  console.log('Hello Edit');
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(),
-    children: "Hello from root edit"
+    children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Plugin Accordion!', 'plugin-accordion')
   });
 }
 
@@ -236,57 +77,9 @@ function Edit() {
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
-
-/***/ }),
-
-/***/ "./src/icon.js":
-/*!*********************!*\
-  !*** ./src/icon.js ***!
-  \*********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("svg", {
-  width: "27",
-  height: "22",
-  viewBox: "0 0 27 22",
-  fill: "none",
-  xmlns: "http://www.w3.org/2000/svg",
-  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-    d: "M21.0772 6.5L19.1024 4.52517C18.9659 4.38867 18.9659 4.16796 19.1024 4.03291L19.4305 3.70474C19.567 3.56825 19.7878 3.56825 19.9228 3.70474L21.3226 5.10455L22.7224 3.70474C22.8589 3.56825 23.0796 3.56825 23.2147 3.70474L23.5428 4.03291C23.6793 4.16941 23.6793 4.39013 23.5428 4.52517L21.568 6.5C21.4344 6.6365 21.2137 6.6365 21.0772 6.5Z",
-    fill: "#0C50FF"
-  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
-    fill: "none",
-    x: "1",
-    y: "1",
-    width: "25",
-    height: "8",
-    stroke: "#0C50FF",
-    strokeWidth: "2"
-  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-    d: "M21.0772 18.5L19.1024 16.5252C18.9659 16.3887 18.9659 16.168 19.1024 16.0329L19.4305 15.7047C19.567 15.5682 19.7878 15.5682 19.9228 15.7047L21.3226 17.1046L22.7224 15.7047C22.8589 15.5682 23.0796 15.5682 23.2147 15.7047L23.5428 16.0329C23.6793 16.1694 23.6793 16.3901 23.5428 16.5252L21.568 18.5C21.4344 18.6365 21.2137 18.6365 21.0772 18.5Z",
-    fill: "#0C50FF"
-  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
-    x: "1",
-    y: "13",
-    width: "25",
-    height: "8",
-    stroke: "#0C50FF",
-    strokeWidth: "2",
-    fill: "none"
-  })]
-}));
 
 /***/ }),
 
@@ -296,7 +89,6 @@ __webpack_require__.r(__webpack_exports__);
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
@@ -304,15 +96,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/edit.js");
 /* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/save.js");
 /* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/block.json");
-/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./icon */ "./src/icon.js");
-/* harmony import */ var _accordion_item_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./accordion-item/index.js */ "./src/accordion-item/index.js");
 /**
  * Registers a new block provided a unique name and an object defining its behavior.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 
-console.log("Hello From Index.js");
+console.log("Hello");
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
  * All files containing `style` keyword are bundled together. The code used
@@ -329,8 +119,6 @@ console.log("Hello From Index.js");
 
 
 
-
-
 /**
  * Every block starts by registering a new block type definition.
  *
@@ -341,10 +129,6 @@ console.log("Hello From Index.js");
    * @see ./edit.js
    */
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
-  /**
-   * @see ./icon.js
-   */
-  icon: _icon__WEBPACK_IMPORTED_MODULE_5__["default"],
   /**
    * @see ./save.js
    */
@@ -359,7 +143,6 @@ console.log("Hello From Index.js");
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ save)
@@ -389,7 +172,7 @@ __webpack_require__.r(__webpack_exports__);
 function save() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
     ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save(),
-    children: 'Accordion Plugin – hello from the saved content!'
+    children: 'Plugin Accordion – Saved Content!'
   });
 }
 
@@ -401,7 +184,6 @@ function save() {
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -414,7 +196,6 @@ __webpack_require__.r(__webpack_exports__);
   \*************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = window["wp"]["blockEditor"];
 
 /***/ }),
@@ -425,7 +206,6 @@ module.exports = window["wp"]["blockEditor"];
   \********************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = window["wp"]["blocks"];
 
 /***/ }),
@@ -436,19 +216,7 @@ module.exports = window["wp"]["blocks"];
   \******************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = window["wp"]["i18n"];
-
-/***/ }),
-
-/***/ "react":
-/*!************************!*\
-  !*** external "React" ***!
-  \************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = window["React"];
 
 /***/ }),
 
@@ -458,7 +226,6 @@ module.exports = window["React"];
   \**********************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = window["ReactJSXRuntime"];
 
 /***/ })
@@ -614,7 +381,7 @@ module.exports = window["ReactJSXRuntime"];
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkaccordion_plugin"] = globalThis["webpackChunkaccordion_plugin"] || [];
+/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkplugin_accordion"] = globalThis["webpackChunkplugin_accordion"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();

@@ -4,7 +4,7 @@
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 import { registerBlockType } from "@wordpress/blocks";
-console.log("Hello From Index.js");
+console.log("Hello")
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
  * All files containing `style` keyword are bundled together. The code used
@@ -20,8 +20,6 @@ import "./style.scss";
 import Edit from "./edit";
 import Save from "./save";
 import metadata from "./block.json";
-import accordionIcon from "./icon";
-import "./accordion-item/index.js";
 
 /**
  * Every block starts by registering a new block type definition.
@@ -33,11 +31,6 @@ registerBlockType(metadata.name, {
 	 * @see ./edit.js
 	 */
 	edit: Edit,
-
-	/**
-	 * @see ./icon.js
-	 */
-	icon: accordionIcon,
 
 	/**
 	 * @see ./save.js

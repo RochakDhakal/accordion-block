@@ -18,7 +18,7 @@ import { useBlockProps } from '@wordpress/block-editor';
 export default function save() {
 	return (
 		<p { ...useBlockProps.save() }>
-			{ 'Accordion Plugin – hello from the saved content!' }
+			{ 'Plugin Accordion – Saved Content!' }
 		</p>
 	);
 }
